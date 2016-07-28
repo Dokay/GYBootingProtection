@@ -22,8 +22,6 @@ static NSString *const mainStoryboardInfoKey = @"UIMainStoryboardFile";
  * 连续闪退检测前需要执行的逻辑，如上报统计初始化
  */
 - (void)onBeforeBootingProtection {
-
-#pragma mark TODO
     
     [GYBootingProtection setLogger:^(NSString *msg) {
         // 设置Logger
@@ -35,8 +33,8 @@ static NSString *const mainStoryboardInfoKey = @"UIMainStoryboardFile";
     }];
     
     // 彩蛋: 弹 Tips 询问是否制造 crash
-    [GYBootingProtection setStartupCrashForTest:YES];
-    [self showAlertForCreateCrashIfNeeded];
+//    [GYBootingProtection setStartupCrashForTest:NO];
+//    [self showAlertForCreateCrashIfNeeded];
 }
 
 
@@ -44,16 +42,14 @@ static NSString *const mainStoryboardInfoKey = @"UIMainStoryboardFile";
  * 修复逻辑，如删除文件
  */
 - (void)onBootingProtection {
-#pragma mark TODO
     // TODO 可先检查 JSPatch 更新
     
     // 删除 Documents Library Caches 目录下所有文件
-    // [GYBootingProtection deleteAllFilesUnderDocumentsLibraryCaches];
+     [GYBootingProtection deleteAllFilesUnderDocumentsLibraryCaches];
 }
 
 - (void)onBootingProtectionWithCompletion:(BoolCompletionBlock)completion {
     [self onBootingProtection];
-#pragma mark TODO 如果需要异步修复，在完成后调用 completion
     // 正常启动流程
     if (completion) completion();
 }
