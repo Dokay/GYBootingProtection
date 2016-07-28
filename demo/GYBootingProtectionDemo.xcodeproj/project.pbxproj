@@ -13,8 +13,8 @@
 		3E7A446B1CEF3DA100879C70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E7A44691CEF3DA100879C70 /* Main.storyboard */; };
 		3E7A446D1CEF3DA100879C70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E7A446C1CEF3DA100879C70 /* Assets.xcassets */; };
 		3E7A44701CEF3DA100879C70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E7A446E1CEF3DA100879C70 /* LaunchScreen.storyboard */; };
-		3EAA19581CEF491B0066E50D /* AppDelegate+GYBootingProtection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAA19531CEF491B0066E50D /* AppDelegate+GYBootingProtection.m */; };
 		3EAA19591CEF491B0066E50D /* GYBootingProtection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAA19551CEF491B0066E50D /* GYBootingProtection.m */; };
+		4E4EEE021D4A02B300F4BCED /* AppDelegate+GYBootingProtection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4EEE011D4A02B300F4BCED /* AppDelegate+GYBootingProtection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +28,10 @@
 		3E7A446C1CEF3DA100879C70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E7A446F1CEF3DA100879C70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E7A44711CEF3DA100879C70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3EAA19521CEF491B0066E50D /* AppDelegate+GYBootingProtection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AppDelegate+GYBootingProtection.h"; path = "../../src/AppDelegate+GYBootingProtection.h"; sourceTree = "<group>"; };
-		3EAA19531CEF491B0066E50D /* AppDelegate+GYBootingProtection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate+GYBootingProtection.m"; path = "../../src/AppDelegate+GYBootingProtection.m"; sourceTree = "<group>"; };
 		3EAA19541CEF491B0066E50D /* GYBootingProtection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GYBootingProtection.h; path = ../../src/GYBootingProtection.h; sourceTree = "<group>"; };
 		3EAA19551CEF491B0066E50D /* GYBootingProtection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GYBootingProtection.m; path = ../../src/GYBootingProtection.m; sourceTree = "<group>"; };
+		4E4EEE001D4A02B300F4BCED /* AppDelegate+GYBootingProtection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+GYBootingProtection.h"; sourceTree = "<group>"; };
+		4E4EEE011D4A02B300F4BCED /* AppDelegate+GYBootingProtection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+GYBootingProtection.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +64,8 @@
 		3E7A445F1CEF3DA100879C70 /* GYBootingProtectionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4E4EEE001D4A02B300F4BCED /* AppDelegate+GYBootingProtection.h */,
+				4E4EEE011D4A02B300F4BCED /* AppDelegate+GYBootingProtection.m */,
 				3E7A44661CEF3DA100879C70 /* ViewController.h */,
 				3E7A44671CEF3DA100879C70 /* ViewController.m */,
 				3E7A44631CEF3DA100879C70 /* AppDelegate.h */,
@@ -80,8 +82,6 @@
 		3E7A44601CEF3DA100879C70 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3EAA19521CEF491B0066E50D /* AppDelegate+GYBootingProtection.h */,
-				3EAA19531CEF491B0066E50D /* AppDelegate+GYBootingProtection.m */,
 				3EAA19541CEF491B0066E50D /* GYBootingProtection.h */,
 				3EAA19551CEF491B0066E50D /* GYBootingProtection.m */,
 				3E7A44611CEF3DA100879C70 /* main.m */,
@@ -159,7 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EAA19581CEF491B0066E50D /* AppDelegate+GYBootingProtection.m in Sources */,
+				4E4EEE021D4A02B300F4BCED /* AppDelegate+GYBootingProtection.m in Sources */,
 				3E7A44681CEF3DA100879C70 /* ViewController.m in Sources */,
 				3E7A44651CEF3DA100879C70 /* AppDelegate.m in Sources */,
 				3E7A44621CEF3DA100879C70 /* main.m in Sources */,
